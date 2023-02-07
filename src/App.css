@@ -36,3 +36,58 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: 'FuturaBold';
+  src: url('./assets/fonts/FuturaBold.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'FuturaMedium';
+  src: url('./assets/fonts/FuturaMedium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FuturaLight';
+  src: url('./assets/fonts/FuturaLight.ttf') format('truetype');
+}
+
+
+.white-text {
+  color : #B6CED3
+}
+
+.main-bg {
+    background-color : #353434
+}
+
+.futura-light {
+    font-family : 'FuturaLight';
+}
+
+.futura-med {
+    font-family : 'FuturaMedium';
+}
+
+.futura-bold {
+    font-family : 'FuturaBold';
+}
+
+.text-violet {
+    color : #7A28CB;
+}
+.text-pink {
+    color : #FC60A8;
+}
+
+.fill-white rect {
+    fill : white;
+}
+
+.circle-image {
+    width : 125px;
+    height : 125px;
+    border-radius : 50%;
+    overflow : hidden;
+}
