@@ -1,7 +1,7 @@
 .gradient-div {
     background : linear-gradient(to bottom, #7A28CB, #FC60A8);
-    height : 3rem;
+    height : 2.5rem;
     border-radius : 10px 10px 0 0;
-    font-family : 'FuturaMedium'
+    font-family : 'FuturaLight'
 }
 

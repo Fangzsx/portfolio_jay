@@ -1,0 +1,8 @@
+.gradient-button {
+    background : linear-gradient(to bottom, #7A28CB, #FC60A8);
+    border : 0;
+    font-family : 'FuturaBold';
+    border-radius : 100px;
+    padding : 5px 20px 5px 20px;
+}
+

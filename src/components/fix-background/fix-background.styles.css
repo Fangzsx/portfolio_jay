@@ -1,0 +1,30 @@
+.fix-background {
+    z-index : -1;
+}
+.elements-color {
+    color : #D64933;
+}
+.class-color {
+    color : #F0A202;
+}
+.values-color {
+    color : #97CC04;
+}
+.symbols-color {
+    color : #51D6FF
+}
+.opaque-50 {
+    opacity : 0.5;
+}
+.opaque-25 {
+    opacity : 0.25;
+}
+.opaque-10 {
+    opacity : 0.10;
+}
+.opaque-80 {
+    opacity : 0.8;
+}
+.opaque-70 {
+    opacity : 0.7;
+}

@@ -7,9 +7,9 @@ import viberLogo from '../../assets/images/viber.svg';
 import discordLogo from '../../assets/images/discord.svg';
 import facebookLogo from '../../assets/images/facebook.svg';
 import profile from '../../assets/images/jay.jpg';
+import GradientButton from '../../components/gradient-button/gradient-button.component.jsx';
 
-
-class GreetingsPage extends Component{a
+class GreetingsPage extends Component{
 
     setBody(){
         return(
@@ -29,15 +29,19 @@ class GreetingsPage extends Component{a
                         <label className='text-pink futura-bold'>Senior Web Developer</label>
                     </div>
                     <div className='w-60 d-flex flex-row justify-content-between ms-3'></div>
-                        <img className='fill-white' src={githubLogo} alt='github.svg' style={{width : '24px', height : '24px', flex : 1}}/>                       
-                        <img src={linkedinLogo} alt='hi.gif' style={{width : '24px', height : '24px', flex : 1}}/>                       
-                        <img src={viberLogo} alt='hi.gif' style={{width : '24px', height : '24px', flex : 1}}/>                       
-                        <img src={discordLogo} alt='hi.gif' style={{width : '24px', height : '24px', flex : 1}}/>                       
-                        <img src={facebookLogo} alt='hi.gif' style={{width : '24px', height : '24px', flex : 1}}/>                       
+                        <img className='clickable' src={githubLogo} alt='github.svg' style={{width : '24px', height : '24px', flex : 1}}/>                       
+                        <img className='clickable' src={linkedinLogo} alt='hi.gif' style={{width : '24px', height : '24px', flex : 1}}/>                       
+                        <img className='clickable' src={viberLogo} alt='hi.gif' style={{width : '24px', height : '24px', flex : 1}}/>                       
+                        <img className='clickable' src={discordLogo} alt='hi.gif' style={{width : '24px', height : '24px', flex : 1}}/>                       
+                        <img className='clickable' src={facebookLogo} alt='hi.gif' style={{width : '24px', height : '24px', flex : 1}}/>                       
                 </div>
                 <div className='d-flex flex-column justify-content-center align-items-center'>
                     <img className='circle-image mt-3' src={profile} alt='profile.jpg'/>
-                    
+                    <div className='mt-3'>
+                        <GradientButton
+                            text='Download CV'/>
+                    </div>
+
                 </div>
 
             </div>
