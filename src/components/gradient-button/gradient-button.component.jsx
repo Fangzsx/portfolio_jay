@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faFileArrowDown} from '@fortawesome/free-solid-svg-icons';
 
 const GradientButton = ({text}) => (
-    <Button className='gradient-button'>
+    <Button className='gradient-button black-outline'>
         {
             text
         }
