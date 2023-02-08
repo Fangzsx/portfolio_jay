@@ -74,15 +74,11 @@
     font-family : 'FuturaBold';
 }
 
-.text-violet {
-    color : #7A28CB;
+.text-egg-blue {
+    color : #51DDE1;
 }
-.text-pink {
-    color : #FC60A8;
-}
-
-.fill-white rect {
-    fill : white;
+.text-teal {
+    color : #178286;
 }
 
 .circle-image {

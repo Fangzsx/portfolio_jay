@@ -14,10 +14,10 @@ class GreetingsPage extends Component{
     setBody(){
         return(
             <div className='d-flex flex-column'>
-                <label className='futura-med'>HELLO,</label>
+                <label className='futura-med fs-sm'>HELLO,</label>
                 <div className='d-flex flex-row'>
                         <label className='futura-bold fs-1 white-text'>I'm</label>
-                        <label className='futura-bold fs-1 mx-2 text-pink'>Jay</label>
+                        <label className='futura-bold fs-1 mx-2 text-teal'>Jay</label>
                         <label className='futura-bold fs-1 white-text me-2'>Garzon</label>
                         <img src={wavePng} alt='hi.gif' style={{width : '32px', height : '32px'}}/>                       
                 </div>
@@ -26,14 +26,14 @@ class GreetingsPage extends Component{
             
                 <div className='d-flex flex-row mt-2'>
                     <div className='w-40'>
-                        <label className='text-pink futura-bold'>Senior Web Developer</label>
+                        <label className='text-teal futura-bold'>Senior Web Developer</label>
                     </div>
                     <div className='w-60 d-flex flex-row justify-content-between ms-3'></div>
                         <img className='clickable' src={githubLogo} alt='github.svg' style={{width : '24px', height : '24px', flex : 1}}/>                       
-                        <img className='clickable' src={linkedinLogo} alt='hi.gif' style={{width : '24px', height : '24px', flex : 1}}/>                       
-                        <img className='clickable' src={viberLogo} alt='hi.gif' style={{width : '24px', height : '24px', flex : 1}}/>                       
-                        <img className='clickable' src={discordLogo} alt='hi.gif' style={{width : '24px', height : '24px', flex : 1}}/>                       
-                        <img className='clickable' src={facebookLogo} alt='hi.gif' style={{width : '24px', height : '24px', flex : 1}}/>                       
+                        <img className='clickable' src={linkedinLogo} alt='linkedin.svg' style={{width : '24px', height : '24px', flex : 1}}/>                       
+                        <img className='clickable' src={viberLogo} alt='viber.svg' style={{width : '24px', height : '24px', flex : 1}}/>                       
+                        <img className='clickable' src={discordLogo} alt='discord.svg' style={{width : '24px', height : '24px', flex : 1}}/>                       
+                        <img className='clickable' src={facebookLogo} alt='facebook.svg' style={{width : '24px', height : '24px', flex : 1}}/>                       
                 </div>
                 <div className='d-flex flex-column justify-content-center align-items-center'>
                     <img className='circle-image mt-3' src={profile} alt='profile.jpg'/>
@@ -54,7 +54,7 @@ class GreetingsPage extends Component{
                 <div className='p-2 h-25'>
                 </div>
                 <div className='p-2 h-50 d-flex justify-content-center align-items-center'>
-                    <Card body={this.setBody()}/>
+                    <Card className='shadow-lg' body={this.setBody()}/>
                 </div>
                 <div className='p-2 h-25'></div>
                 
