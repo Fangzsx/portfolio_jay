@@ -37,8 +37,7 @@ class AboutMePage extends Component {
                     <label className='fs-2 text-teal futura-bold'>Sk</label>
                     <label className='fs-2 white-text futura-bold'>ills</label>
                 </div>
-                <Pill text='Database Management (ERD)'/>
-                <Pill text='System Analyzation (Business Flow, DFD, UML)'/>
+                <Pill text='System Analyzation (Business Flow, DFD, ERD)'/>
                 <Pill text='Experience in Backend and Frontend Development'/>
                 <Pill text='Github Version Control (Forking, Branching, PR)'/>
                 <Pill text='Discussing and Gathering Requirements from Clients'/> 
