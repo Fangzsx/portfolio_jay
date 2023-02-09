@@ -5,7 +5,6 @@ const ImageFrame = ({src}) => (
     <div className='d-flex flex-row'>
         <div className='one-part square'>
         </div>
-
         <div className='one-part square d-flex align-items-center justify-content-center mt-4'>
             <div className='bg-danger first-layer rounded'>
             </div>

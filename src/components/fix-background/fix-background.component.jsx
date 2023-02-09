@@ -113,7 +113,7 @@ const FixBackground = () => (
 
         </div>
 
-        <div className='d-flex flex-column mt-4 opaque-50'>
+        <div className='d-flex flex-column mt-4 opaque-10'>
             <DivO text='topNavTop'/>
             <div className='d-flex flex-row'>
                 <label>&nbsp;&nbsp;&nbsp;&nbsp;</label>
