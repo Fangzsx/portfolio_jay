@@ -67,44 +67,44 @@ class ProjectsPage extends Component {
 
     setAparAppBody(){
         return (
-            <div className='d-flex justify-content-center align-items-center'>
-                <img src={aparLogo} alt='apar.png' style={{width : '80px'}}/>
+            <div className='d-flex justify-content-center align-items-center mt-2'>
+                <img src={aparLogo} alt='apar.png' style={{width : '50px'}}/>
             </div>
         )
     }
 
     setAnimeAppBody(){
         return (
-            <div className='d-flex justify-content-center align-items-center'>
-                <img src={animuLogo} alt='animu.png' style={{width : '80px'}}/>
+            <div className='d-flex justify-content-center align-items-center mt-2'>
+                <img src={animuLogo} alt='animu.png' style={{width : '50px'}}/>
             </div>
         )
     }
     setNewsAppBody(){
         return (
-            <div className='d-flex justify-content-center align-items-center'>
-                <img src={newsLogo} alt='news.png' style={{width : '80px'}}/>
+            <div className='d-flex justify-content-center align-items-center mt-2'>
+                <img src={newsLogo} alt='news.png' style={{width : '50px'}}/>
             </div>
         )
     }
     setCocktailAppBody(){
         return (
-            <div className='d-flex justify-content-center align-items-center'>
-                <img src={cocktailLogo} alt='cocktail.png' style={{width : '80px'}}/>
+            <div className='d-flex justify-content-center align-items-center mt-2'>
+                <img src={cocktailLogo} alt='cocktail.png' style={{width : '50px'}}/>
             </div>
         )
     }
     setTodoAppBody(){
         return (
-            <div className='d-flex justify-content-center align-items-center'>
-                <img src={todoLogo} alt='todo.png' style={{width : '80px'}}/>
+            <div className='d-flex justify-content-center align-items-center mt-2'>
+                <img src={todoLogo} alt='todo.png' style={{width : '50px'}}/>
             </div>
         )
     }
     setMealAppBody(){
         return (
-            <div className='d-flex justify-content-center align-items-center'>
-                <img src={mealLogo} alt='meal.png' style={{width : '80px'}}/>
+            <div className='d-flex justify-content-center align-items-center mt-2'>
+                <img src={mealLogo} alt='meal.png' style={{width : '50px'}}/>
             </div>
         )
     }
@@ -113,7 +113,7 @@ class ProjectsPage extends Component {
             <div className='d-flex'>
                 <div className='d-flex flex-row flex-wrap justify-content-center align-items-center'>
                     <CardSmall 
-                        label='Apar App'
+                        label='APAR App'
                         body={this.setAparAppBody()}
                         />
 
