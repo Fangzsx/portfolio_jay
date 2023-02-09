@@ -1,0 +1,13 @@
+.gradient-card {
+    background : linear-gradient(to bottom, #178286, #51DDE1) #4F4B4B;
+    border-radius : 10px 10px 0 0;
+    font-family : 'FuturaLight';
+    height : 1.5rem;
+}
+.card-small {
+    width : 100px;
+    height : 100px;
+    border-radius : 10px;
+    background-color : white;
+    
+}
