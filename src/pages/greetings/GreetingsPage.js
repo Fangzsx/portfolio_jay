@@ -54,7 +54,9 @@ class GreetingsPage extends Component{
                 <div className='p-2 h-25'>
                 </div>
                 <div className='p-2 h-50 d-flex justify-content-center align-items-center'>
-                    <Card className='shadow-lg' body={this.setBody()}/>
+                    <Card
+                        title='welcome.html'
+                        body={this.setBody()}/>
                 </div>
                 <div className='p-2 h-25'></div>
                 

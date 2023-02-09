@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import GreetingsPage from '../greetings/GreetingsPage';
 import AboutMePage from '../about-me/AboutMePage';
+import TechnologiesPage from '../technologies/TechnologiesPage';
 import CircularNavBar from '../../components/circular-navbar/circular-navbar.component.jsx';
 import FixBackground from '../../components/fix-background/fix-background.component.jsx';
 
@@ -12,7 +13,7 @@ class MainPage extends Component{
                 <FixBackground/>
                 <GreetingsPage/>
                 <AboutMePage/>
-                <GreetingsPage/>
+                <TechnologiesPage/>
                 <CircularNavBar/>
             </div>
 

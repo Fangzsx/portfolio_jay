@@ -2,7 +2,7 @@ import './image-frame.styles.css';
 
 const ImageFrame = ({src}) => (
 
-    <div className='d-flex flex-row mt-4'>
+    <div className='d-flex flex-row'>
         <div className='one-part square'>
         </div>
 
