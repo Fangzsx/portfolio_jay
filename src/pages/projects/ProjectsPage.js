@@ -16,7 +16,7 @@ class ProjectsPage extends Component {
     setInsuranceAppBody(){
         return (
             <div className='d-flex justify-content-center align-items-center'>
-                <img src={mercantileLogo} alt='mercantile.png' style={{width : '80px'}}/>
+                <img className='mt-2' src={mercantileLogo} alt='mercantile.png' style={{width : '60px'}}/>
             </div>
         )
     }
