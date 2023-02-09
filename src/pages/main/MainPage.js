@@ -12,13 +12,13 @@ class MainPage extends Component{
     render(){
         return(
             <div className='main-bg'>
-                <FixBackground />
                 <GreetingsPage />
                 <AboutMePage />
                 <TechnologiesPage />
                 <ProjectsPage />
                 <ContactsPage />
                 <CircularNavBar/>
+                <FixBackground />
             </div>
 
         )
