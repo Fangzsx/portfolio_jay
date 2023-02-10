@@ -8,6 +8,7 @@ import discordLogo from '../../assets/images/discord.svg';
 import facebookLogo from '../../assets/images/facebook.svg';
 import profile from '../../assets/images/jay.jpg';
 import GradientButton from '../../components/gradient-button/gradient-button.component.jsx';
+import openProfileTab from '../../openProfileTab.js';
 
 class GreetingsPage extends Component{
 
@@ -29,16 +30,19 @@ class GreetingsPage extends Component{
                         <label className='text-teal futura-bold'>Senior Web Developer</label>
                     </div>
                     <div className='w-60 d-flex flex-row justify-content-between ms-3'></div>
-                        <img className='clickable' src={githubLogo} alt='github.svg' style={{width : '24px', height : '24px', flex : 1}}/>                       
-                        <img className='clickable' src={linkedinLogo} alt='linkedin.svg' style={{width : '24px', height : '24px', flex : 1}}/>                       
-                        <img className='clickable' src={viberLogo} alt='viber.svg' style={{width : '24px', height : '24px', flex : 1}}/>                       
-                        <img className='clickable' src={discordLogo} alt='discord.svg' style={{width : '24px', height : '24px', flex : 1}}/>                       
-                        <img className='clickable' src={facebookLogo} alt='facebook.svg' style={{width : '24px', height : '24px', flex : 1}}/>                       
+                        <img className='clickable' onClick={ () => openProfileTab('github', 'fangzsx') } src={githubLogo} alt='github.svg' style={{width : '24px', height : '24px', flex : 1}}/>                       
+                        <img className='clickable' onClick={ () => openProfileTab('linkedin', 'jay-gilbert-garzon') } src={linkedinLogo} alt='linkedin.svg' style={{width : '24px', height : '24px', flex : 1}}/>
+                        <img className='clickable' onClick={ () => openProfileTab('facebook', 'jygrzn')} src={facebookLogo} alt='facebook.svg' style={{width : '24px', height : '24px', flex : 1}}/>                       
+                        <img className='clickable' onClick={ () => openProfileTab('viber', '09295399252') } src={viberLogo} alt='viber.svg' style={{width : '24px', height : '24px', flex : 1}}/>                       
+                        <img className='clickable' onClick={ () => openProfileTab('discord', 'superjay#2849') } src={discordLogo} alt='discord.svg' style={{width : '24px', height : '24px', flex : 1}}/>                       
+
                 </div>
                 <div className='d-flex flex-column justify-content-center align-items-center'>
                     <img className='circle-image mt-3' src={profile} alt='profile.jpg'/>
                     <div className='mt-3'>
                         <GradientButton
+                            fileName='CV-Garzon-Jay-Gilbert'
+                            fileUrl='https://drive.google.com/uc?export=download&id=1SsL0BAlciFsaKm9P10ioXJ560PrIzhQp'
                             text='Download CV'/>
                     </div>
 

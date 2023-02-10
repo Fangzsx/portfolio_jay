@@ -9,6 +9,7 @@ import linkedinLogo from '../../assets/images/linkedin.svg';
 import viberLogo from '../../assets/images/viber.svg';
 import discordLogo from '../../assets/images/discord.svg';
 import facebookLogo from '../../assets/images/facebook.svg';
+import openProfileTab from '../../openProfileTab.js';
 
 class ContactsPage extends Component{
 
@@ -29,11 +30,11 @@ class ContactsPage extends Component{
                 </div>
                 <label className='futura-bold mt-4'>I'm also available via :</label>
                 <div className='d-flex flex-row justify-content-center align-items-center p-4'>
-                        <img className='clickable' src={githubLogo} alt='github.svg' style={{width : '24px', height : '24px'}}/>                       
-                        <img className='clickable mx-4' src={linkedinLogo} alt='linkedin.svg' style={{width : '24px', height : '24px'}}/>                       
-                        <img className='clickable' src={viberLogo} alt='viber.svg' style={{width : '24px', height : '24px'}}/>                       
-                        <img className='clickable mx-4' src={discordLogo} alt='discord.svg' style={{width : '24px', height : '24px'}}/>                       
-                        <img className='clickable' src={facebookLogo} alt='facebook.svg' style={{width : '24px', height : '24px'}}/>                       
+                        <img className='clickable' onClick={ () => openProfileTab('github', 'fangzsx') } src={githubLogo} alt='github.svg' style={{width : '24px', height : '24px', flex : 1}}/>                       
+                        <img className='clickable' onClick={ () => openProfileTab('linkedin', 'jay-gilbert-garzon') } src={linkedinLogo} alt='linkedin.svg' style={{width : '24px', height : '24px', flex : 1}}/>
+                        <img className='clickable' onClick={ () => openProfileTab('facebook', 'jygrzn')} src={facebookLogo} alt='facebook.svg' style={{width : '24px', height : '24px', flex : 1}}/>                       
+                        <img className='clickable' onClick={ () => openProfileTab('viber', '09295399252') } src={viberLogo} alt='viber.svg' style={{width : '24px', height : '24px', flex : 1}}/>                       
+                        <img className='clickable' onClick={ () => openProfileTab('discord', 'superjay#2849') } src={discordLogo} alt='discord.svg' style={{width : '24px', height : '24px', flex : 1}}/>                       
                 </div>
             </div>
         )

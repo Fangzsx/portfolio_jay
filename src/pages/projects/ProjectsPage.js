@@ -10,8 +10,13 @@ import animuLogo from '../../assets/images/animu.png';
 import mealLogo from '../../assets/images/dish.png';
 import todoLogo from '../../assets/images/todo.png';
 import cocktailLogo from '../../assets/images/cocktail.png';
+import Example from '../../components/modal/modal.component.jsx'
 
 class ProjectsPage extends Component {
+
+    launchModal(){
+        console.log('test');
+    }
 
     setInsuranceAppBody(){
         return (
@@ -46,12 +51,13 @@ class ProjectsPage extends Component {
                 <div className='d-flex flex-row flex-wrap justify-content-center align-items-center'>
                     <CardSmall 
                         label='Insurance App'
+                        onClick={this.launchModal.bind(this)}
                         body={this.setInsuranceAppBody()}
                         />
 
                     <CardSmall 
                         label='E-learning App'
-                         body={this.setSushiAppBody()}/>
+                        body={this.setSushiAppBody()}/>
 
                     <CardSmall 
                         label='Live Chat Support and Ticketing System'
