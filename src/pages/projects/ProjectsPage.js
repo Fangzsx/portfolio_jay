@@ -176,15 +176,20 @@ class ProjectsPage extends Component {
                     <label className='futura-bold fs-1 white-text'>jects</label>
                 </div>
                 <Modal
-                    size='lg'
-                    show={app.showModal} 
+                    show={app.showModal}
+                    size='xl'
                     onHide={this.hideModal.bind(this)}
                     centered>
-                    <Modal.Header closeButton>
-                        <Modal.Title>{app.name}</Modal.Title>
+                    <Modal.Header className='gradient-teal' closeButton>
+                        <Modal.Title className='text-white futura-light black-outline'>{app.name}</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body>
-                        <Carousel/>
+                    <Modal.Body className='d-flex container justify-content-center align-items-center bg-dark'>
+                        {
+                            app && (
+                                <Carousel app={app.name}/>
+
+                            )
+                        }
                     </Modal.Body>
                 </Modal>
                 <div className='mt-4'>
