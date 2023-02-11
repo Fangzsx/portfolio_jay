@@ -10,12 +10,23 @@ import animuLogo from '../../assets/images/animu.png';
 import mealLogo from '../../assets/images/dish.png';
 import todoLogo from '../../assets/images/todo.png';
 import cocktailLogo from '../../assets/images/cocktail.png';
-import Example from '../../components/modal/modal.component.jsx'
+import { Modal } from 'react-bootstrap';
+import Carousel from '../../components/carousel/carousel.component.jsx';
+
 
 class ProjectsPage extends Component {
 
-    launchModal(){
-        console.log('test');
+    constructor(){
+        super();
+        this.state = { app : { name : '', showModal : false } };
+    }
+
+    showModal(name){
+        this.setState({ app : { name : name, showModal : true }});
+    }
+
+    hideModal(){
+        this.setState({ app : { name : '', showModal : false} });
     }
 
     setInsuranceAppBody(){
@@ -51,20 +62,20 @@ class ProjectsPage extends Component {
                 <div className='d-flex flex-row flex-wrap justify-content-center align-items-center'>
                     <CardSmall 
                         label='Insurance App'
-                        onClick={this.launchModal.bind(this)}
+                        onClick={this.showModal.bind(this, 'Mercantile Insurance')}
                         body={this.setInsuranceAppBody()}
                         />
 
                     <CardSmall 
                         label='E-learning App'
+                        onClick={this.showModal.bind(this, 'Sushi Learning Academy')}
                         body={this.setSushiAppBody()}/>
 
                     <CardSmall 
                         label='Live Chat Support and Ticketing System'
+                        onClick={this.showModal.bind(this, 'Figaro Coffee Group')}
                         body={this.setFigaroAppBody()}/>
                 </div>
-
-                
             </div>
         )
 
@@ -120,27 +131,33 @@ class ProjectsPage extends Component {
                 <div className='d-flex flex-row flex-wrap justify-content-center align-items-center'>
                     <CardSmall 
                         label='APAR App'
+                        onClick={this.showModal.bind(this, 'APAR App')}
                         body={this.setAparAppBody()}
                         />
 
                     <CardSmall 
                         label='Anime App'
-                         body={this.setAnimeAppBody()}/>
+                        onClick={this.showModal.bind(this, 'Animu DB')}
+                        body={this.setAnimeAppBody()}/>
 
                     <CardSmall 
                         label='News App'
+                        onClick={this.showModal.bind(this, 'News App')}
                         body={this.setNewsAppBody()}/>
                     <CardSmall 
                         label='Cocktail App'
+                        onClick={this.showModal.bind(this, 'Cocktail DB')}
                         body={this.setCocktailAppBody()}
                         />
 
                     <CardSmall 
                         label='Meal App'
-                         body={this.setMealAppBody()}/>
+                        onClick={this.showModal.bind(this, 'Meal DB')}
+                        body={this.setMealAppBody()}/>
 
                     <CardSmall 
                         label='Todo App'
+                        onClick={this.showModal.bind(this, 'Todo App')}
                         body={this.setTodoAppBody()}/>
                 </div>
 
@@ -151,12 +168,25 @@ class ProjectsPage extends Component {
     }
 
     render(){
+        const { app } = this.state;
         return(
             <div className='d-flex flex-column justify-content-center align-items-center'>
                 <div className='d-flex flex-row black-outline'>
                     <label className='futura-bold fs-1 text-teal'>Pro</label>
                     <label className='futura-bold fs-1 white-text'>jects</label>
                 </div>
+                <Modal
+                    size='lg'
+                    show={app.showModal} 
+                    onHide={this.hideModal.bind(this)}
+                    centered>
+                    <Modal.Header closeButton>
+                        <Modal.Title>{app.name}</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <Carousel/>
+                    </Modal.Body>
+                </Modal>
                 <div className='mt-4'>
                     <Card 
                         title='web_projects.html'

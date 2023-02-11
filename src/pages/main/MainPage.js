@@ -6,7 +6,6 @@ import ProjectsPage from '../projects/ProjectsPage';
 import ContactsPage from '../contacts/ContactsPage';
 import CircularNavBar from '../../components/circular-navbar/circular-navbar.component.jsx';
 import FixBackground from '../../components/fix-background/fix-background.component.jsx';
-import ControlledCarousel from '../../components/carousel/carousel.component.jsx';
 
 class MainPage extends Component{
 
