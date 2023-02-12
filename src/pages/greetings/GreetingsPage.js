@@ -47,7 +47,7 @@ class GreetingsPage extends Component{
                     <div className='mt-3'>
                         <GradientButton
                             fileName='CV-Garzon-Jay-Gilbert'
-                            fileUrl='https://drive.google.com/uc?export=download&id=1SsL0BAlciFsaKm9P10ioXJ560PrIzhQp'
+                            fileUrl='https://drive.google.com/uc?export=download&id=1wqpwdcndWJFyTmN2qYzGkOcv9sW5zGOk'
                             text='Download CV'/>
                     </div>
 
