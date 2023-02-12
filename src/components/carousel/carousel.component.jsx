@@ -44,7 +44,7 @@ const MyCarousel = ({ app }) => {
         break;
         case  'todo app' : images = Object.entries(todoImages).map(([key, value]) => ({ key, value }));
         break;
-        default : console.log('app not found');
+        default:
     }
 
     return(
@@ -56,7 +56,7 @@ const MyCarousel = ({ app }) => {
                     return(
                         <Carousel.Item interval={700}  key={image.key }>
                             <div className='d-flex justify-content-center align-items-center' style={{width : '100%', height : '100%'}}>
-                                <img className='img-fluid' src={image.value} style={{height : '550px'}} alt={image.key}/>
+                                <img className='img-fluid' src={image.value} style={{height : '470px'}} alt={image.key}/>
                             </div>
                             <Carousel.Caption>
                                 <p className='futura-bold black-outline'>{image.key}</p>

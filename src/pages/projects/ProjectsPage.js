@@ -179,8 +179,8 @@ class ProjectsPage extends Component {
                     <label className='futura-bold fs-1 white-text'>jects</label>
                 </div>
                 <Modal
+                    size='lg'
                     show={app.showModal}
-                    size='xl'
                     onHide={this.hideModal.bind(this)}
                     centered>
                     <Modal.Header className='gradient-teal' closeButton>
