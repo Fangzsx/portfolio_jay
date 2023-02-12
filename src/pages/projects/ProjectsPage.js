@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { Component, createRef } from 'react';
 import Card from '../../components/card/card.component.jsx';
 import CardSmall from '../../components/card-small/card-small.component.jsx';
 import mercantileLogo from '../../assets/images/mercantile.png';
@@ -19,6 +19,7 @@ class ProjectsPage extends Component {
     constructor(){
         super();
         this.state = { app : { name : '', showModal : false } };
+        this.projectsRef = createRef();
     }
 
     showModal(name){
@@ -170,7 +171,9 @@ class ProjectsPage extends Component {
     render(){
         const { app } = this.state;
         return(
-            <div className='d-flex flex-column justify-content-center align-items-center'>
+            <div
+                ref={this.projectsRef}
+                className='d-flex flex-column justify-content-center align-items-center'>
                 <div className='d-flex flex-row black-outline'>
                     <label className='futura-bold fs-1 text-teal'>Pro</label>
                     <label className='futura-bold fs-1 white-text'>jects</label>

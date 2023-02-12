@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { Component, createRef } from 'react';
 import Card from '../../components/card/card.component.jsx';
 import LabeledIcon from '../../components/labeled-icon/labeled-icon.component.jsx';
 import htmlLogo from '../../assets/images/html-1.png';
@@ -20,6 +20,10 @@ import  ubuntuLogo from '../../assets/images/ubuntu.png';
 import digitalOceanLogo from '../../assets/images/digital-ocean.png';
 
 class TechnologiesPage extends Component {
+    constructor(){
+        super();
+        this.technologiesRef = createRef();
+    }
 
     setFrontEndBody(){
         return(
@@ -97,7 +101,9 @@ class TechnologiesPage extends Component {
 
     render(){
         return(
-            <div className='d-flex flex-column justify-content-center align-items-center'>
+            <div
+                ref={this.technologiesRef}
+                className='d-flex flex-column justify-content-center align-items-center'>
                 <div className='d-flex flex-row m-4'>
                     <label className='futura-bold fs-1 text-teal black-outline'>Tech</label>
                     <label className='futura-bold fs-1 white-text black-outline'>nologies</label>

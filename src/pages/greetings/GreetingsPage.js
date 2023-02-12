@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { Component, createRef } from 'react';
 import Card from '../../components/card/card.component.jsx';
 import wavePng from '../../assets/images/hi.gif';
 import githubLogo from '../../assets/images/github.svg';
@@ -11,10 +11,15 @@ import GradientButton from '../../components/gradient-button/gradient-button.com
 import openProfileTab from '../../openProfileTab.js';
 
 class GreetingsPage extends Component{
+    constructor(props){
+        super(props);
+        this.profileRef = createRef();
+    }
 
     setBody(){
         return(
-            <div className='d-flex flex-column'>
+            <div
+                className='d-flex flex-column'>
                 <label className='futura-med fs-sm'>HELLO,</label>
                 <div className='d-flex flex-row'>
                         <label className='futura-bold fs-1 white-text'>I'm</label>
@@ -54,7 +59,7 @@ class GreetingsPage extends Component{
 
     render(){
         return(
-            <div className='d-flex flex-column vh-100'>
+            <div ref={this.profileRef} className='d-flex flex-column vh-100'>
                 <div className='p-2 h-25'>
                 </div>
                 <div className='p-2 h-50 d-flex justify-content-center align-items-center'>

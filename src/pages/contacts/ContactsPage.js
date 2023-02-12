@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { Component, createRef } from 'react';
 import Card from '../../components/card/card.component.jsx';
 import handshake from '../../assets/images/handshake.gif';
 import geoLogo from '../../assets/images/geo-alt.svg';
@@ -13,9 +13,14 @@ import openProfileTab from '../../openProfileTab.js';
 
 class ContactsPage extends Component{
 
+    constructor(props){
+        super(props);
+        this.contactsRef = createRef();
+    }
+
     setContactsBody(){
         return(
-            <div className='d-flex flex-column'>
+            <div ref={this.contactsRef} className='d-flex flex-column'>
                 <div className='d-flex flex-row'>
                     <img src={geoLogo} alt='geo.svg'/>
                     <label className='futura-bold text-white mx-1'>Location : Mandaluyong City</label>

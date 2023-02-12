@@ -8,7 +8,6 @@ import phoneLogo from '../../assets/images/phone.svg';
 
 class AboutMePage extends Component {
 
-
     setExperiencesBody(){
         return (
             <div className='d-flex flex-column mb-4'>
