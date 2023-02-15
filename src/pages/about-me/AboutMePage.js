@@ -22,7 +22,7 @@ class AboutMePage extends Component {
                     </div>
                     <div className='d-flex flex-column rounded square justify-content-center align-items-center ms-4'>
                         <img className='icon' src={phoneLogo} alt='phone.svg'/>
-                        <label className='futura-bold text-center mt-3 fs-xs'>1 Year as Android Developer (Kotlin)</label>
+                        <label className='futura-bold text-center mt-3 fs-xs'>2 Years as Android Developer (Kotlin)</label>
                     </div>
                 </div>
             </div>
