@@ -18,7 +18,7 @@ class AboutMePage extends Component {
                 <div className='d-flex flex-row justify-content-center align-items-center mt-4'>
                     <div className='d-flex flex-column rounded square justify-content-center align-items-center'>
                         <img className='icon' src={globeLogo} alt='globe.svg'/>
-                        <label className='futura-bold text-center mt-3 fs-xs'>7 Months as Web Developer (MERN)</label>
+                        <label className='futura-bold text-center mt-3 fs-xs'>1 year as Web Developer (MERN)</label>
                     </div>
                     <div className='d-flex flex-column rounded square justify-content-center align-items-center ms-4'>
                         <img className='icon' src={phoneLogo} alt='phone.svg'/>
