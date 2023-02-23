@@ -32,7 +32,7 @@ class GreetingsPage extends Component{
             
                 <div className='d-flex flex-row mt-2'>
                     <div className='w-40'>
-                        <label className='text-teal futura-bold'>Senior Web Developer</label>
+                        <label className='text-teal futura-bold'>Frontend Web Developer</label>
                     </div>
                     <div className='w-60 d-flex flex-row justify-content-between ms-3'></div>
                         <img className='clickable' onClick={ () => openProfileTab('github', 'fangzsx') } src={githubLogo} alt='github.svg' style={{width : '24px', height : '24px', flex : 1}}/>                       
