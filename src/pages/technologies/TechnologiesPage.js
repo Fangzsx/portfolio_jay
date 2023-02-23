@@ -5,6 +5,10 @@ import htmlLogo from '../../assets/images/html-1.png';
 import cssLogo from '../../assets/images/css-3.png';
 import reactLogo from '../../assets/images/structure.png';
 import bootstrapLogo from '../../assets/images/bootstrap.png';
+import jestLogo from '../../assets/images/jest.png';
+import reduxLogo from '../../assets/images/redux.png';
+import viteLogo from '../../assets/images/vite.png';
+import tailwindLogo from '../../assets/images/tailwind.svg';
 import nodejsLogo from '../../assets/images/node-js.png';
 import expressLogo from '../../assets/images/express.png';
 import mongodbLogo from '../../assets/images/mongodb.png';
@@ -38,8 +42,21 @@ class TechnologiesPage extends Component {
                     src={reactLogo}
                     label='REACT JS'/>
                 <LabeledIcon 
+                    src={reduxLogo}
+                    label='REDUX'/>
+                <LabeledIcon 
+                    src={jestLogo}
+                    label='JEST'/>
+                <LabeledIcon 
+                    src={tailwindLogo}
+                    label='TAILWIND CSS'/>
+                <LabeledIcon 
                     src={bootstrapLogo}
                     label='BOOTSTRAP'/>
+
+                <LabeledIcon 
+                    src={viteLogo}
+                    label='VITE'/>
             </div>
         )
     }
